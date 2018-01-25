@@ -1,16 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 ## Table of Contents
 
-- [Instalation](#Instalation)
-- [Files](#Files)
+- [Instalation](#instalation)
+- [Files](#files)
 
 
 ## Instalation
 
 Download and install npm from [here](https://www.npmjs.com/get-npm).
 
-* Run a `CMD` and go to the project's folder. THen run:
+* Run a `Terminal` and go to the project's folder. Then run:
 
 ### `npm install`
 
@@ -40,6 +38,5 @@ excel-store/
     logo.svg
 ```
 
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: node modules will be created after the `install` command**
 
