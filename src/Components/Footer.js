@@ -1,4 +1,5 @@
 import React from 'react';
+import './footer.css';
 
 class Footer extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Footer extends React.Component {
         var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
 
         if (top > 0) {
-            window.scrollTo(0, top - 35);
+            window.scrollTo(0, top - 75);
             setTimeout(this.scrollUp, 10);
             
         }
@@ -23,7 +24,7 @@ class Footer extends React.Component {
 	  <footer className="text-muted">
 	        <div className="container">
 	          <p className="float-right">
-	            <a className="l-blue" onClick={this.scrollUp}>Volver arriba</a>
+	            <a className="l-white" onClick={this.scrollUp}>Volver arriba</a>
 	          </p>
 	          <p>Todos los derechos reservados © 2018 grupo estrellitos, Guatemala</p>
 	          <p>¿Alguna duda? <a href="https://gmail.com/">contáctanos</a> o visita nuestra página en <a href="https://facebook.com/">Facebook</a>.</p>

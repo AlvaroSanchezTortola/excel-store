@@ -1,7 +1,8 @@
 import React from 'react';
 import imag from '../Images/img1.jpg';
-import imgcirc from '../Images/noc.png';
-import imaglol from '../Images/lol.png';
+import Particles from 'react-particles-js';
+import {Vivus1, Vivus2, Vivus3, Vivus4, Vivus5, Vivus6} from './Vivus';
+
 
 import './carousel.css';
 
@@ -11,9 +12,122 @@ class Carousel extends React.Component {
     	return (
     		<main  className="animated fadeIn whole" role="main">
     		      <div id="myCarousel" className="carousel slide" data-ride="carousel">
-    		        <div className="carousel-inner">
+    		        <div className="carousel-inner" id="particles-js">
     		          <div className="carousel-item active">
-    		            <img className="first-slide" src={imag} alt="First slide"/>
+    		            <Particles 
+                            params={
+                                {
+                                  "particles": {
+                                    "number": {
+                                      "value": 80,
+                                      "density": {
+                                        "enable": true,
+                                        "value_area": 800
+                                      }
+                                    },
+                                    "color": {
+                                      "value": "#020101"
+                                    },
+                                    "shape": {
+                                      "type": "circle",
+                                      "stroke": {
+                                        "width": 0,
+                                        "color": "#000000"
+                                      },
+                                      "polygon": {
+                                        "nb_sides": 5
+                                      },
+                                      "image": {
+                                        "src": "img/github.svg",
+                                        "width": 100,
+                                        "height": 100
+                                      }
+                                    },
+                                    "opacity": {
+                                      "value": 0.5,
+                                      "random": false,
+                                      "anim": {
+                                        "enable": false,
+                                        "speed": 1,
+                                        "opacity_min": 0.1,
+                                        "sync": false
+                                      }
+                                    },
+                                    "size": {
+                                      "value": 3,
+                                      "random": true,
+                                      "anim": {
+                                        "enable": false,
+                                        "speed": 40,
+                                        "size_min": 0.1,
+                                        "sync": false
+                                      }
+                                    },
+                                    "line_linked": {
+                                      "enable": true,
+                                      "distance": 150,
+                                      "color": "#000000",
+                                      "opacity": 0.4,
+                                      "width": 1
+                                    },
+                                    "move": {
+                                      "enable": true,
+                                      "speed": 1.5783201938177185,
+                                      "direction": "none",
+                                      "random": false,
+                                      "straight": false,
+                                      "out_mode": "out",
+                                      "bounce": false,
+                                      "attract": {
+                                        "enable": false,
+                                        "rotateX": 600,
+                                        "rotateY": 1200
+                                      }
+                                    }
+                                  },
+                                  "interactivity": {
+                                    "detect_on": "canvas",
+                                    "events": {
+                                      "onhover": {
+                                        "enable": false,
+                                        "mode": "repulse"
+                                      },
+                                      "onclick": {
+                                        "enable": false,
+                                        "mode": "push"
+                                      },
+                                      "resize": true
+                                    },
+                                    "modes": {
+                                      "grab": {
+                                        "distance": 400,
+                                        "line_linked": {
+                                          "opacity": 1
+                                        }
+                                      },
+                                      "bubble": {
+                                        "distance": 400,
+                                        "size": 40,
+                                        "duration": 2,
+                                        "opacity": 8,
+                                        "speed": 3
+                                      },
+                                      "repulse": {
+                                        "distance": 200,
+                                        "duration": 0.4
+                                      },
+                                      "push": {
+                                        "particles_nb": 4
+                                      },
+                                      "remove": {
+                                        "particles_nb": 2
+                                      }
+                                    }
+                                  },
+                                  "retina_detect": true
+                              }
+                            }
+                        />
     		            <div className="container">
     		              <div className="carousel-caption text-left">
     		                <h1>Productos de alta calidad.</h1>
@@ -28,19 +142,19 @@ class Carousel extends React.Component {
     		        
     		        <div className="row">
     		          <div className="col-lg-4">
-    		            <img className="rounded-circle" src={imgcirc} alt="Generic placeholder " width="140" height="140"/>
+    		            <Vivus1/>
     		            <h2>Seguros</h2>
     		            <p>La segurdad de nuestros productos es lo máximo.</p>
     		            <p><a className="btn btn-lg1 btn-secondary"  role="button">Ver detalles &raquo;</a></p>
     		          </div>
     		          <div className="col-lg-4">
-    		            <img className="rounded-circle" src={imgcirc} alt="Generic placeholder " width="140" height="140"/>
+    		            <Vivus2/>
     		            <h2>Eficientes</h2>
     		            <p>Somos más efecientes que todos.</p>
     		            <p><a className="btn btn-lg1 btn-secondary"  role="button">Ver detalles &raquo;</a></p>
     		          </div>
     		          <div className="col-lg-4">
-    		            <img className="rounded-circle" src={imgcirc} alt="Generic placeholder " width="140" height="140"/>
+    		            <Vivus3/>
     		            <h2>Eficaces</h2>
     		            <p>Somos más eficaces que nadie.</p>
     		            <p><a className="btn btn-lg1 btn-secondary"  role="button">Ver detalles &raquo;</a></p>
@@ -58,7 +172,7 @@ class Carousel extends React.Component {
     		            <p className="lead">Es uno de nuestros pilares que la gran.</p>
     		          </div>
     		          <div className="col-md-5">
-    		            <img className="featurette-image img-fluid mx-auto" src={imaglol} alt="Generic placeholder "/>
+    		            <Vivus4/>
     		          </div>
     		        </div>
 
@@ -70,7 +184,7 @@ class Carousel extends React.Component {
     		            <p className="lead">Es otro de nuestros pilares que la gran.</p>
     		          </div>
     		          <div className="col-md-5 order-md-1">
-    		            <img className="featurette-image img-fluid mx-auto" src={imaglol} alt="Generic placeholder "/>
+    		            <Vivus5/>
     		          </div>
     		        </div>
 
@@ -82,7 +196,7 @@ class Carousel extends React.Component {
     		            <p className="lead">Es lo que nos hace diferentes que la gran.</p>
     		          </div>
     		          <div className="col-md-5">
-    		            <img className="featurette-image img-fluid mx-auto" src={imaglol} alt="Generic placeholder "/>
+    		            <Vivus6/>
     		          </div>
     		        </div>
 

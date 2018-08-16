@@ -25,7 +25,7 @@ class Cover extends React.Component {
 
     		              <header className="masthead clearfix">
     		                <div className="inner">
-    		                  <h3 className="masthead-brand">Programas Excel™</h3>
+    		                  <h3 className="masthead-brand">ProExcel</h3>
     		                  <nav className="nav nav-masthead">
     		                    <a className="nav-link active" onClick={ this.props.gotoCover }>Inicio</a>
     		                    <a className="nav-link" onClick={ this.props.gotoCarousel }>Información</a>
@@ -44,7 +44,7 @@ class Cover extends React.Component {
 
     		              <footer className="mastfoot">
     		                <div className="inner">
-    		                  <p>Una solución de <a  className="link"  href="https://grupoestrellita.com/">Grupo Estrellita</a>, por <a className="link" href="https://twitter.com/mdo">@sanchez</a>.</p>
+    		                  <p>Una solución con <a  className="link"  href="https://facebook.com/">♥</a>, por <a className="link" href="https://twitter.com/">@web solutions</a>.</p>
     		                </div>
     		              </footer>
 
