@@ -26,7 +26,7 @@ class Footer extends React.Component {
 	          <p className="float-right">
 	            <a className="l-white" onClick={this.scrollUp}>Volver arriba</a>
 	          </p>
-	          <p>Todos los derechos reservados © 2018 grupo estrellitos, Guatemala</p>
+	          <p>Todos los derechos reservados © 2018 Guatemala</p>
 	          <p>¿Alguna duda? <a href="https://gmail.com/">contáctanos</a> o visita nuestra página en <a href="https://facebook.com/">Facebook</a>.</p>
 	        </div>
 	      </footer>

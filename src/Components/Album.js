@@ -7,13 +7,13 @@ import './album.css';
 class Album extends React.Component {
   render() {
     return (
-    <div className="animated fadeIn">  	
-    	<main role="main">
+    
+    	<main className="animated fadeIn" role="main">
       
-      <div  className="jumbotron text-center">
-        
-        <div className="container">
-                <Particles 
+      <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item-1 active">
+                    <Particles 
                             params={
                                 {
                                   "particles": {
@@ -25,13 +25,13 @@ class Album extends React.Component {
                                       }
                                     },
                                     "color": {
-                                      "value": "#020101"
+                                      "value": "#ffffff"
                                     },
                                     "shape": {
                                       "type": "circle",
                                       "stroke": {
                                         "width": 0,
-                                        "color": "#000000"
+                                        "color": "#ffffff"
                                       },
                                       "polygon": {
                                         "nb_sides": 5
@@ -65,7 +65,7 @@ class Album extends React.Component {
                                     "line_linked": {
                                       "enable": true,
                                       "distance": 150,
-                                      "color": "#000000",
+                                      "color": "#ffffff",
                                       "opacity": 0.4,
                                       "width": 1
                                     },
@@ -126,16 +126,20 @@ class Album extends React.Component {
                                   "retina_detect": true
                               }
                             }
-                        />         
-          <h1 className="jumbotron-heading">Nuestros Productos</h1>
-
-          <p className="lead text-muted">Contamos con una alta gama de producto listos para su disposición. Cada uno de los programas cuenta con un video de prueba que se mostrará más adelante.</p>
-          <p>
-            <a  className="btn btn-espa btn-lg1 btn-primary">Solicitar una prueba</a>
-            <a  className="btn btn-espa btn-lg1 btn-secondary">Contácto</a>
-          </p>
-        </div>
-      </div>
+                        />
+                    <div className="container">
+                      <div className="carousel-caption carr text-center">
+                        <h1>Catálogo de Productos</h1>
+                        <p>Contamos con una alta gama de producto listos para su disposición. Cada uno de los programas cuenta con un video de prueba que se mostrará más adelante..</p>
+                        <div>
+                          <p><a className="btn btn-lg1 btn-primary" role="button">Solicita una prueba</a></p>
+                          <p><a className="btn btn-lg1 btn-secondary" role="button">Contacto</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
       
       <div className="album text-muted">
         <div className="container">
@@ -185,7 +189,7 @@ class Album extends React.Component {
       </div>
 
 </main>
-	</div>
+	
 	)
   }
 }

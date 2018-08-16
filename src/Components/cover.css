@@ -17,7 +17,7 @@ src: url("../SEGOEUI.TTF");
 .btn-second,
 .btn-second:hover,
 .btn-second:focus {
-  color: #333;
+  color: #212020;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
@@ -33,6 +33,7 @@ body {
   font-family: 'Segoe UI';
   /*background-image: url('../Images/background.PNG');
   background-size: cover;*/
+  background-color: #212020 !important;
   
 }
 

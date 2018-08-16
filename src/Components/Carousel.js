@@ -1,5 +1,4 @@
 import React from 'react';
-import imag from '../Images/img1.jpg';
 import Particles from 'react-particles-js';
 import {Vivus1, Vivus2, Vivus3, Vivus4, Vivus5, Vivus6} from './Vivus';
 
@@ -12,7 +11,7 @@ class Carousel extends React.Component {
     	return (
     		<main  className="animated fadeIn whole" role="main">
     		      <div id="myCarousel" className="carousel slide" data-ride="carousel">
-    		        <div className="carousel-inner" id="particles-js">
+    		        <div className="carousel-inner">
     		          <div className="carousel-item active">
     		            <Particles 
                             params={
@@ -168,8 +167,8 @@ class Carousel extends React.Component {
 
     		        <div className="row featurette">
     		          <div className="col-md-7">
-    		            <h2 className="featurette-heading">Seguridad  <span className="text-muted">que la gran.</span></h2>
-    		            <p className="lead">Es uno de nuestros pilares que la gran.</p>
+    		            <h2 className="featurette-heading">Seguridad  <span className="text-muted">lo es todo.</span></h2>
+    		            <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     		          </div>
     		          <div className="col-md-5">
     		            <Vivus4/>
@@ -180,8 +179,8 @@ class Carousel extends React.Component {
 
     		        <div className="row featurette">
     		          <div className="col-md-7 order-md-2" style={{'text-align':'right'}}>
-    		            <h2 className="featurette-heading">Eficiencia <span className="text-muted">que la gran.</span></h2>
-    		            <p className="lead">Es otro de nuestros pilares que la gran.</p>
+    		            <h2 className="featurette-heading">Eficiencia <span className="text-muted">en todo momento.</span></h2>
+    		            <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     		          </div>
     		          <div className="col-md-5 order-md-1">
     		            <Vivus5/>
@@ -193,7 +192,7 @@ class Carousel extends React.Component {
     		        <div className="row featurette">
     		          <div className="col-md-7">
     		            <h2 className="featurette-heading">Eficacia <span className="text-muted">no podría faltar.</span></h2>
-    		            <p className="lead">Es lo que nos hace diferentes que la gran.</p>
+    		            <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     		          </div>
     		          <div className="col-md-5">
     		            <Vivus6/>

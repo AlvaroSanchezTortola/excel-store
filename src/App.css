@@ -9,7 +9,7 @@ src: url("SEGOEUI.TTF");
 }
 
 .bg-dark{
-  background-color: #333!important;
+  background-color: #212020!important;
 }
 
 .navbar-brand{
@@ -23,7 +23,7 @@ src: url("SEGOEUI.TTF");
 header{
   -moz-animation-duration: 0.3s!important;
   -webkit-animation-duration: 0.3s!important;
-  background-color: #212529;
+  background-color: #212020;
 }
 
 .whole{
@@ -31,8 +31,9 @@ header{
 }
 
 footer{
-  background-color: #333;
+  background-color: #212020;
 }
 .btn-lg1{
   color: #fff!important;
 }
+
